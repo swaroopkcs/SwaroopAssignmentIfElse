@@ -7,13 +7,25 @@ public class Question6 {
 		String promo1 = "Promo1";
 		String promo2 = "Promo2";
 		String promo3 = "Promo3";
-		String promo = "Promo";
+		String promo = "Promo3";
+		double productPrice = 100;
+		double finalDiscount;
+		double discountedPrice;
 		if (promo.equals(promo1)) {
-			System.out.println("The total discount applied on the products is "+(discount+5));
+			finalDiscount = discount+5;
+			System.out.println("The total discount applied on the products is "+finalDiscount);
+			discountedPrice = (productPrice*(100-finalDiscount))/100;
+			System.out.println("The final price of the product is "+discountedPrice);
 		} else if (promo.equals(promo2)){
-			System.out.println("The total discount applied on the product is "+(discount+10));
+			finalDiscount = discount+10;
+			System.out.println("The total discount applied on the products is "+finalDiscount);
+			discountedPrice = (productPrice*(100-finalDiscount))/100;
+			System.out.println("The final price of the product is "+discountedPrice);
 		} else if (promo.equals(promo3)) {
-			System.out.println("The total discount applied on the product is "+(discount+15));
+			finalDiscount = discount+20;
+			System.out.println("The total discount applied on the products is "+finalDiscount);
+			discountedPrice = (productPrice*(100-finalDiscount))/100;
+			System.out.println("The final price of the product is "+discountedPrice);
 		} else {
 			System.out.println("Please enter a valid promo code");
 		}
